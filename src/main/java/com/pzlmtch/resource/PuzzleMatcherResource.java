@@ -2,6 +2,7 @@ package com.pzlmtch.resource;
 
 
 import com.pzlmtch.bean.PuzzleDetails;
+import com.pzlmtch.ejb.ImageMatcherEjb;
 import com.pzlmtch.ejb.PuzzleDetailsEjb;
 import com.pzlmtch.exception.PzmRestException;
 import com.pzlmtch.general.Utils;
@@ -28,6 +29,10 @@ public class PuzzleMatcherResource {
 
     @EJB
     private PuzzleDetailsEjb puzzleDetailsEjb;
+    
+    //@EJB
+    //private ImageMatcherEjb imageMatcherEjb;
+    
 
     @Context
     private HttpServletRequest request;
@@ -85,7 +90,7 @@ public class PuzzleMatcherResource {
         
         System.out.println(puzzleDetails);
         
-        String results = "22";//imageMatcher.generateSimilarityMatrix(puzzleDetails);
+        String results = puzzleDetailsEjb.getSimilarityMatrix(puzzleDetails);
         
         logger.traceExit();
         return Response.status(Status.OK).entity(results).type(MediaType.TEXT_PLAIN).build();
