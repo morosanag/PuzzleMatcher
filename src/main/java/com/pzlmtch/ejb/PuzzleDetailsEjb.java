@@ -6,9 +6,15 @@ package com.pzlmtch.ejb;
  * and open the template in the editor.
  */
 
-import org.json.JSONObject;
+import com.pzlmtch.bean.PuzzleDetails;
+import com.pzlmtch.exception.PzmRestException;
 
 public interface PuzzleDetailsEjb {
 
     public String test();
+    public void insertPuzzleDetails(String sessionId, PuzzleDetails puzzleDetails) throws PzmRestException;
+    public void updatePuzzleDetails(String sessionId, PuzzleDetails puzzleDetails) throws PzmRestException;
+    public void deletePuzzleDetails(String sessionId) throws PzmRestException;
+    public PuzzleDetails getPuzzleDetails(String sessionId) throws PzmRestException;
+    public String getSimilarityMatrix(PuzzleDetails puzzleDetails);
 }
