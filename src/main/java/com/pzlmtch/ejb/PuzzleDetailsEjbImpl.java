@@ -5,11 +5,15 @@
  */
 package com.pzlmtch.ejb;
 
+import com.pzlmtch.bean.PuzzleDetails;
+import java.util.HashMap;
 import javax.ejb.Stateless;
 
 @Stateless
 public class PuzzleDetailsEjbImpl implements PuzzleDetailsEjb {
 
+    public static HashMap<String, PuzzleDetails> puzzleDetailsMap = new HashMap<String, PuzzleDetails>();
+    
     public String test() {
         return "test";
     }
