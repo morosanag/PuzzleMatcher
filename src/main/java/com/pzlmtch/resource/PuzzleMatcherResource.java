@@ -5,7 +5,6 @@ import com.pzlmtch.bean.PuzzleDetails;
 import com.pzlmtch.ejb.PuzzleDetailsEjb;
 import com.pzlmtch.exception.PzmRestException;
 import com.pzlmtch.general.Utils;
-import static com.sun.corba.se.spi.presentation.rmi.StubAdapter.request;
 import javax.ejb.EJB;
 import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.Consumes;
@@ -39,7 +38,7 @@ public class PuzzleMatcherResource {
         logger.traceEntry();
         logger.log(Level.INFO, "{}, {}", new Object[]{});
 
-        String result = puzzleDetailsEjb.test();
+        String result = "dsfsdf";
         
         logger.traceExit();
         return Response.status(Status.OK).entity(result).type(MediaType.TEXT_PLAIN).build();

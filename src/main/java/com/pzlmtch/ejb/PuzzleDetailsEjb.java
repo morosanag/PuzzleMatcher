@@ -11,10 +11,8 @@ import com.pzlmtch.exception.PzmRestException;
 
 public interface PuzzleDetailsEjb {
 
-    public String test();
     public void insertPuzzleDetails(String sessionId, PuzzleDetails puzzleDetails) throws PzmRestException;
     public void updatePuzzleDetails(String sessionId, PuzzleDetails puzzleDetails) throws PzmRestException;
     public void deletePuzzleDetails(String sessionId) throws PzmRestException;
     public PuzzleDetails getPuzzleDetails(String sessionId) throws PzmRestException;
-    public String getSimilarityMatrix(PuzzleDetails puzzleDetails);
 }

@@ -45,13 +45,5 @@ public class PuzzleDetailsEjbImpl implements PuzzleDetailsEjb {
         return puzzleDetails;
     }
     
-    public String test() {
-        return "test";
-    }
-
-    @Override
-    public String getSimilarityMatrix(PuzzleDetails puzzleDetails) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
 }
