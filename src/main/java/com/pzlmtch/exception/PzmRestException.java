@@ -1,14 +1,14 @@
-package com.adobe.mws.exception;
+package com.pzlmtch.exception;
 
-public class MwsRestException extends Exception {
+public class PzmRestException extends Exception {
     
     private static final long serialVersionUID = -1704614259705909983L;
     
-    public MwsRestException() {
+    public PzmRestException() {
         
     }
     
-    public MwsRestException(String exMessage) {
+    public PzmRestException(String exMessage) {
         super(exMessage);
     }
     

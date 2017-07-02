@@ -1,4 +1,4 @@
-package com.adobe.mws.resource;
+package com.pzlmtch.resource;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -40,7 +40,7 @@ public class ApplicationConfig extends Application {
 
     private void addRestResourceClasses(Set<Class<?>> resources) {
         // resources
-        resources.add(com.adobe.mws.resource.MvpdResource.class);
+        resources.add(com.pzlmtch.resource.PuzzleMatcherResource.class);
     }
 
 }

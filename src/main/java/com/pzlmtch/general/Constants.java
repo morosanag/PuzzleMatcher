@@ -1,4 +1,4 @@
-package com.adobe.mws.general;
+package com.pzlmtch.general;
 
 public class Constants {
 

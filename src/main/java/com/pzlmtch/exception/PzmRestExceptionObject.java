@@ -1,14 +1,14 @@
-package com.adobe.mws.exception;
+package com.pzlmtch.exception;
 
 import javax.xml.bind.annotation.XmlTransient;
 
-public class MwsRestExceptionObject {
+public class PzmRestExceptionObject {
 
     private String meesageId;
     private Integer statusCode;
     private String title;
 
-    public MwsRestExceptionObject(String meesageId, Integer statusCode, String title) {
+    public PzmRestExceptionObject(String meesageId, Integer statusCode, String title) {
         super();
         this.meesageId = meesageId;
         this.statusCode = statusCode;
